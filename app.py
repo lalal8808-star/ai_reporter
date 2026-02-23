@@ -2,10 +2,7 @@ import streamlit as st # Streamlit 라이브러리 import
 import sys # 시스템 모듈 import
 import os # 운영체제 모듈 import
 
-# 부모 디렉토리의 stock_dashboard 폴더를 참조할 수 있도록 설정합니다.
-sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
-
-from stock_dashboard import data_fetcher
+from shared import data_fetcher
 import news_scraper
 import report_engine
 import plotly.graph_objects as go
